@@ -1,0 +1,207 @@
+<!doctype html>
+<html>
+
+<head>
+	<title>Blood Pressure Report</title>
+	<script src="../static/chart/Chart.min.js"></script>
+	<script src="../static/chart/Chart.js/samples/utils.js"></script>
+	
+	<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="../static/vendor/bootstrap/css/bootstrap.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="../static/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="../static/fonts/iconic/css/material-design-iconic-font.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="../static/vendor/animate/animate.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="../static/vendor/css-hamburgers/hamburgers.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="../static/vendor/animsition/css/animsition.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="../static/vendor/select2/select2.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="../static/vendor/daterangepicker/daterangepicker.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="../static/css/util.css">
+	<link rel="stylesheet" type="text/css" href="../static/css/form.css">
+<!--===============================================================================================-->
+
+ <!-- Main CSS-->
+ <link href="../static/css/main.css" rel="stylesheet" media="all">
+ <!-- owl carousel CSS -->
+ <link rel="stylesheet" href="../static/css/owl.carousel.min.css">
+ <!-- themify CSS -->
+ <link rel="stylesheet" href="../static/css/themify-icons.css">
+ <!-- flaticon CSS -->
+ <link rel="stylesheet" href="../static/css/flaticon.css">
+ <!-- magnific popup CSS -->
+ <link rel="stylesheet" href="../static/css/magnific-popup.css">
+ <!-- nice select CSS -->
+ <link rel="stylesheet" href="../static/css/nice-select.css">
+ <!-- swiper CSS -->
+ <link rel="stylesheet" href="../static/css/slick.css">
+ <!-- style CSS -->
+ <link rel="stylesheet" href="../static/css/style.css">
+
+ <script src="../static/js/jquery.min.js"></script>
+ <!-- <script type="text/javascript" src="https://canvasjs.com/assets/script/jquery-1.11.1.min.js"></script> -->
+<!-- <script type="text/javascript" src="https://canvasjs.com/assets/script/canvasjs.min.js"></script> -->
+<script src="../static/js/canvasjs.min.js"></script>
+
+ <style>
+	canvas{
+		-moz-user-select: none;
+		-webkit-user-select: none;
+		-ms-user-select: none;
+	}
+	</style>
+</head>
+
+<body>
+
+	<!-- Header page starts here -->
+	<div class="main-body">
+        <header class="main_menu home_menu" style="position: static;">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-12">
+                        <nav class="navbar navbar-expand-lg navbar-light">
+                            <a class="navbar-brand" href="index.html"> <img src="../static/img/logo.png" alt="logo" style="max-width:230px; position: relative; top:8px; left:50px;"> </a>
+                            <button class="navbar-toggler" type="button" data-toggle="collapse"
+                                data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                                aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            
+    
+                            <div class="collapse navbar-collapse main-menu-item justify-content-center"
+                                id="navbarSupportedContent">
+                                <ul class="navbar-nav align-items-center">
+                                    <li class="nav-item active">
+                                        <a class="nav-link" href="{{url_for('index')}}">Home</a>
+                                    </li>
+                                    <li class="nav-item active">
+                                        <a class="nav-link" href="{{url_for('key_generation')}}">Key Generation</a>
+                                    </li>
+                                   
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="{{url_for('applicant_details')}}">Applicant Details</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="{{url_for('block_explorer')}}">Block Explorer</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="{{url_for('full_chain')}}">Full Chain</a>
+                                    </li>
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle" id="navbarDropdown"
+                                            role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            Manage
+                                        </a>
+                                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                            <!-- <a class="dropdown-item" href="#">Hospital Registration</a> -->
+                                            <a class="dropdown-item nav-link" href="{{url_for('medical_details')}}">Medical Details</a>
+                                            <a class="dropdown-item nav-link" href="{{url_for('latest_transaction')}}">Latest Transaction</a>
+                                            <a class="dropdown-item nav-link" href="{{url_for('mine_page')}}">Mine</a>
+                                            <a class="dropdown-item nav-link" href="{{url_for('version_holder')}}">Version Holder</a>
+                                            <a class="dropdown-item nav-link" href="{{url_for('node_registration')}}">Node Registration</a>
+											<a class="dropdown-item nav-link" href="{{url_for('full_transaction')}}">Full Transaction</a>
+											<a class="dropdown-item nav-link" href="{{url_for('sugar_report')}}">Diabetes Report</a>
+											<a class="dropdown-item nav-link" href="{{url_for('bp_report')}}">Blood Pressure Report</a>
+                                        </div>
+                                    </li>
+    
+                              
+                                </ul>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </header>
+		<!-- Header part end-->
+		
+		<!-- Report part starts -->
+		<div class="container-contact100" style="padding: 70px; ">
+        
+            <div class="contact100-map" id="google_map" data-map-x="40.722047" data-map-y="-73.986422" data-pin="images/icons/map-marker.png" data-scrollwhell="0" data-draggable="1"></div>
+            <div class="bg-video">
+                <video id="myvideo" class="bg-video__content" autoplay muted loop>
+                    <source src="../static/img/video.mp4" type="video/mp4" >
+                    <source src="../static/img/video.webm" type="video/webm" >
+                    Your browser is not supported!
+                </video>
+            </div>
+
+
+    
+            <div class="wrap-contact100" style="padding:0px; width:900px;">
+                   
+
+                    <div class="wrapper wrapper--w790" style="max-width:1000px;">
+           
+                        <div class="card card-5">
+                            
+                            <div class="card-heading">
+                                <h2 class="title">Blood Pressure Report</h2>
+                            </div>
+                                        
+                            <!-- ** forms required ** -->
+            
+                            <div class="card-body" style="padding-bottom: 0px; ">
+                                    <div class="card-body"  style="padding-bottom: 50px; "style="display:block;" id="box">
+                                        <div align="center">
+                                            <input type="text" name="uuid" id="search" placeholder="Enter the uuid" class="form-control" />
+                                            <button type="submit" id="submit"><i class="fa fa-search"></i></button>
+                                        </div>
+                                        <!-- <ul class="list-group" id="result"></ul> -->
+                                        <br />
+                                    </div>
+							</div>
+							
+							<div id="chartContainer" style="height: 370px; max-width: 920px; margin: 10px 196px; margin-bottom:60px;"></div>
+
+                                  
+                            
+                                
+                            </div>
+                        </div>
+            </div>
+            
+		</div>
+		
+		<script type="text/javascript" src="https://canvasjs.com/assets/script/jquery-1.11.1.min.js"></script>
+		<script type="text/javascript" src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+
+		<script type="text/javascript">
+			document.getElementById('submit').addEventListener('click', function() {
+
+				var uid = document.getElementById('search').value;
+				console.log(uid);
+				// window.onload = function () {
+				var dataPoints = [];
+				var chart = new CanvasJS.Chart("chartContainer",{
+					
+					data: [{
+						type: "line",
+						dataPoints : dataPoints,
+					}]
+				});
+				$.getJSON("../static/graph_ploter/"+uid+"_bp.json", function(data) {  
+					$.each(data, function(key, value){
+						dataPoints.push({x: value[0], y: parseInt(value[1])});
+					});	
+					chart.render();
+				});
+				// }
+
+		})
+
+
+		</script>
+	
+	
+</body>
+
+</html>

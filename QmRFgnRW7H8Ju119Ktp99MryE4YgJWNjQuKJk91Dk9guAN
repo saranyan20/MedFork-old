@@ -1,0 +1,14 @@
+{
+    "versions": [
+        {
+            "version": 1,
+            "ipfs_hash": "QmZKS4oAB2uy3E4L8qhUYtzRpoMZpxjAQpHBJGchGJ9AAW",
+            "KEM": "Ao2JUvMmVNCW5dl4oROtlk4MGSPwo5Dp6hrrpA1x3YaSA5uOyCm8qnVXgK2CbRE1rAMtiinqVIo1inaP5ilZNToCjU2W/FqMlfikEFvD87KIxYnu15M32G2PQhF0I76OY54="
+        },
+        {
+            "version": 2,
+            "ipfs_hash": "QmdtrXT1iykQuRc29J8WqeBHVd34z9Vn8sGmvaUaBv5T64",
+            "KEM": "Aus1NRir1aM4gYkpWQTx6ls97Vqdnx9BCMbomjwcZwGvA0vYFlXx/2yyPUwXa/7C4qMUesgIZDkvObY7GUmVUWnu5PADBJfl7WTLavmHyaIUvt8ZJ+FcKr3y5/JN0oYcpU8="
+        }
+    ]
+}

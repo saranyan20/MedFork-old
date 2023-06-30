@@ -1,0 +1,234 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta http-equiv='cache-control' content='no-cache'>
+    <meta http-equiv='expires' content='0'>
+    <meta http-equiv='pragma' content='no-cache'>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Medfork</title>
+    <link rel="icon" href="../static/img/favicon.png">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../static/css/bootstrap.min.css">
+    <!-- animate CSS -->
+    <link rel="stylesheet" href="../static/css/animate.css">
+    <!-- owl carousel CSS -->
+    <link rel="stylesheet" href="../static/css/owl.carousel.min.css">
+    <!-- themify CSS -->
+    <link rel="stylesheet" href="../static/css/themify-icons.css">
+    <!-- flaticon CSS -->
+    <link rel="stylesheet" href="../static/css/flaticon.css">
+    <!-- magnific popup CSS -->
+    <link rel="stylesheet" href="../static/css/magnific-popup.css">
+    <!-- nice select CSS -->
+    <link rel="stylesheet" href="../static/css/nice-select.css">
+    <!-- swiper CSS -->
+    <link rel="stylesheet" href="../static/css/slick.css">
+    <!-- style CSS -->
+    <link rel="stylesheet" href="../static/css/style.css">
+    <!-- <link rel="stylesheet" href="../static/preloader/preloader.css"> -->
+
+    <!-- <link rel="stylesheet" href="../static/preloader/demo.css">
+    <link rel="stylesheet" href="../static/css/style1.css"> -->
+    <link rel="stylesheet" href="../static/preloader/main.css">
+    <link rel="stylesheet" href="../static/preloader/normalize.css">
+    <script src="../static/preloader/modernizr-2.6.2.min.js"></script>
+</head>
+
+<body>
+    
+<!-- Preloader -->
+    <div id="loader-wrapper">
+        <div id="loader"></div>
+
+        <div class="loader-section section-left"></div>
+        <div class="loader-section section-right"></div>
+
+    </div>
+
+    <!--::header part start::-->
+    <div class="main-body">
+    <header class="main_menu home_menu">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-12">
+                    <nav class="navbar navbar-expand-lg navbar-light">
+                        <a class="navbar-brand" href="index.html"> <img src="../static/img/logo.png" alt="logo" style="max-width:230px; position: relative; top:8px; left:50px;"> </a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse"
+                            data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        
+
+                        <div class="collapse navbar-collapse main-menu-item justify-content-center"
+                            id="navbarSupportedContent">
+                            <ul class="navbar-nav align-items-center">
+                                <li class="nav-item active">
+                                    <a class="nav-link" href="{{url_for('index')}}">Home</a>
+                                </li>
+                                <li class="nav-item active">
+                                    <a class="nav-link" href="{{url_for('key_generation')}}">Key Generation</a>
+                                </li>
+                               
+                                <li class="nav-item">
+                                    <a class="nav-link" href="{{url_for('applicant_details')}}">Applicant Details</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="{{url_for('block_explorer')}}">Block Explorer</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="{{url_for('full_chain')}}">Full Chain</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" id="navbarDropdown"
+                                        role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        Manage
+                                    </a>
+                                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <!-- <a class="dropdown-item" href="#">Hospital Registration</a> -->
+                                        <a class="dropdown-item nav-link" href="{{url_for('medical_details')}}">Medical Details</a>
+                                        <a class="dropdown-item nav-link" href="{{url_for('latest_transaction')}}">Latest Transaction</a>
+                                        <a class="dropdown-item nav-link" href="{{url_for('mine_page')}}">Mine</a>
+                                        <a class="dropdown-item nav-link" href="{{url_for('version_holder')}}">Version Holder</a>
+                                        <a class="dropdown-item nav-link" href="{{url_for('node_registration')}}">Node Registration</a>
+                                        <a class="dropdown-item nav-link" href="{{url_for('full_transaction')}}">Full Transaction</a>
+                                        <a class="dropdown-item nav-link" href="{{url_for('sugar_report')}}">Diabetes Report</a>
+                                        <a class="dropdown-item nav-link" href="{{url_for('bp_report')}}">Blood Pressure Report</a>
+
+
+                                    </div>
+                                </li>
+
+                          
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Header part end-->
+
+    <!-- banner part start-->
+    <section class="banner_part">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-5 col-xl-5">
+                    <div class="banner_text">
+                        <div class="banner_text_iner" style="position:relative; top:-90px;">
+                            <!-- <h5>We are here for your care</h5> -->
+                            <h1>Next Generation of
+                                EHR</h1>
+                            <p>Storing patients record in electronic health record system using blockchain technology</p>
+                            <a href="{{url_for('applicant_details')}}" class="btn_2">Add Patient Details</a>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-7">
+                    <div class="banner_img" style="position:relative; top:-90px;">
+                        <img src="../static/img/banner_img.png" alt="logo-img" >                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- banner part start-->
+
+    <!-- about us part start-->
+    <section class="about_us padding_top">
+        <div class="container">
+            <div class="row justify-content-between align-items-center">
+                <div class="col-md-6 col-lg-6">
+                    <div class="about_us_img">
+                        <img src="../static/img/top_service.png" alt="">
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-5">
+                    <div class="about_us_text">
+                        <h2>About us</h2>
+                        <p>Advancing in electronic health records using blockchain to make records secure and version updation for better and proper maintenance of system.</p>
+                        <!-- <a class="btn_2 " href="#">learn more</a> -->
+                        <!-- <div class="banner_item">
+                            <div class="single_item">
+                                <img src="img/icon/banner_1.svg" alt="">
+                                <h5>Emergency</h5>
+                            </div>
+                            <div class="single_item">
+                                <img src="img/icon/banner_2.svg" alt="">
+                                <h5>Appointment</h5>
+                            </div>
+                            <div class="single_item">
+                                <img src="img/icon/banner_3.svg" alt="">
+                                <h5>Qualfied</h5>
+                            </div>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> <br><br>
+    <!-- about us part end-->
+
+    
+
+    <!-- footer part start-->
+    <footer class="footer-area">
+
+
+        <div class="copyright_part">
+            <div class="container">
+                <div class="row align-items-center">
+                    
+                    <div class="col-lg-4 col-md-12 text-center text-lg-right footer-social">
+                        <a href="#"><i class="ti-facebook"></i></a>
+                        <a href="#"> <i class="ti-twitter"></i> </a>
+                        <a href="#"><i class="ti-instagram"></i></a>
+                        <a href="#"><i class="ti-skype"></i></a>
+                    </div>
+
+                    <p>&copy; Copyright 2020 MedFork</p>
+
+                </div>
+            </div>
+        </div>
+
+    </footer>
+</div>
+
+    <!-- footer part end-->
+
+    <!-- jquery plugins here-->
+
+    <script src="../static/js/jquery-1.12.1.min.js"></script>
+    <!-- popper js -->
+    <script src="../static/js/popper.min.js"></script>
+    <!-- bootstrap js -->
+    <script src="../static/js/bootstrap.min.js"></script>
+    <!-- owl carousel js -->
+    <script src="../static/js/owl.carousel.min.js"></script>
+    <script src="../static/js/jquery.nice-select.min.js"></script>
+    <!-- contact js -->
+    <script src="../static/js/jquery.ajaxchimp.min.js"></script>
+    <script src="../static/js/jquery.form.js"></script>
+    <script src="../static/js/jquery.validate.min.js"></script>
+    <script src="../static/js/mail-script.js"></script>
+    <script src="../static/js/contact.js"></script>
+    <!-- custom js -->
+    <script src="../static/js/custom.js"></script>
+    <script src="../static/preloader/modernizr.custom.63321.js"></script>
+    <script>
+        $(document).ready(function() {
+	
+	setTimeout(function(){
+		$('body').addClass('loaded');
+		$('h1').css('color','#222222');
+	}, 500);
+	
+});
+    </script>
+</body>
+
+</html>

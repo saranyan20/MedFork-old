@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags-->
+    <meta http-equiv='cache-control' content='no-cache'>
+    <meta http-equiv='expires' content='0'>
+    <meta http-equiv='pragma' content='no-cache'>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Colorlib Templates">
+    <meta name="author" content="Colorlib">
+    <meta name="keywords" content="Colorlib Templates">
+
+    <!-- Title Page-->
+    <title>Latest Transaction</title>
+    <link rel="icon" href="../static/img/favicon.png">
+
+    <!-- Icons font CSS-->
+    <link href="../static/vendor/mdi-font/css/material-design-iconic-font.min.css" rel="stylesheet" media="all">
+    <link href="../static/vendor/font-awesome-4.7/css/font-awesome.min.css" rel="stylesheet" media="all">
+
+    <!-- Font special for pages-->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+
+    <!-- Vendor CSS-->
+    <link href="../static/vendor/select2/select2.min.css" rel="stylesheet" media="all">
+    <link href="../static/vendor/datepicker/daterangepicker.css" rel="stylesheet" media="all">
+
+    <!-- Main CSS-->
+    <link href="../static/css/main.css" rel="stylesheet" media="all">
+  
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../static/css/bootstrap.min.css">
+    <!-- animate CSS -->
+    <link rel="stylesheet" href="../static/css/animate.css">
+    <!-- owl carousel CSS -->
+    <link rel="stylesheet" href="../static/css/owl.carousel.min.css">
+    <!-- themify CSS -->
+    <link rel="stylesheet" href="../static/css/themify-icons.css">
+    <!-- flaticon CSS -->
+    <link rel="stylesheet" href="../static/css/flaticon.css">
+    <!-- magnific popup CSS -->
+    <link rel="stylesheet" href="../static/css/magnific-popup.css">
+    <!-- nice select CSS -->
+    <link rel="stylesheet" href="../static/css/nice-select.css">
+    <!-- swiper CSS -->
+    <link rel="stylesheet" href="../static/css/slick.css">
+    <!-- style CSS -->
+    <link rel="stylesheet" href="../static/css/style.css">
+    <!-- Form css -->
+    <link rel="stylesheet" href="../static/css/form.css">
+</head>
+
+<body>
+
+    <!--::header part start::-->
+    <div class="main-body">
+        <header class="main_menu home_menu" style="position: static; background-color: white;">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-12">
+                        <nav class="navbar navbar-expand-lg navbar-light">
+                            <a class="navbar-brand" href="index.html"> <img src="../static/img/logo.png" alt="logo" style="max-width:230px; position: relative; top:8px; left:50px;"> </a>
+                            <button class="navbar-toggler" type="button" data-toggle="collapse"
+                                data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                                aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            
+    
+                            <div class="collapse navbar-collapse main-menu-item justify-content-center"
+                                id="navbarSupportedContent">
+                                <ul class="navbar-nav align-items-center">
+                                    <li class="nav-item active">
+                                        <a class="nav-link" href="{{url_for('index')}}">Home</a>
+                                    </li>
+                                    <li class="nav-item active">
+                                        <a class="nav-link" href="{{url_for('key_generation')}}">Key Generation</a>
+                                    </li>
+                                   
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="{{url_for('applicant_details')}}">Applicant Details</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="{{url_for('block_explorer')}}">Block Explorer</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="{{url_for('full_chain')}}">Full Chain</a>
+                                    </li>
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle" id="navbarDropdown"
+                                            role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            Manage
+                                        </a>
+                                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                            <!-- <a class="dropdown-item" href="#">Hospital Registration</a> -->
+                                            <a class="dropdown-item nav-link" href="{{url_for('medical_details')}}">Medical Details</a>
+                                            <a class="dropdown-item nav-link" href="{{url_for('latest_transaction')}}">Latest Transaction</a>
+                                            <a class="dropdown-item nav-link" href="{{url_for('mine_page')}}">Mine</a>
+                                            <a class="dropdown-item nav-link" href="{{url_for('version_holder')}}">Version Holder</a>
+                                            <a class="dropdown-item nav-link" href="{{url_for('node_registration')}}">Node Registration</a>
+                                            <a class="dropdown-item nav-link" href="{{url_for('full_transaction')}}">Full Transaction</a>
+                                        </div>
+                                    </li>
+    
+                              
+                                </ul>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- Header part end-->
+
+        <div class="container-contact100" style="padding: 70px; ">
+        
+            <div class="contact100-map" id="google_map" data-map-x="40.722047" data-map-y="-73.986422" data-pin="images/icons/map-marker.png" data-scrollwhell="0" data-draggable="1"></div>
+            <div class="bg-video">
+                <video id="myvideo" class="bg-video__content" autoplay muted loop>
+                    <source src="../static/img/video.mp4" type="video/mp4" >
+                    <source src="../static/img/video.webm" type="video/webm" >
+                    Your browser is not supported!
+                </video>
+            </div>
+
+
+    
+            <div class="wrap-contact100" style="padding:0px; width:900px;">
+                   
+
+                    <div class="wrapper wrapper--w790" style="max-width:1000px;">
+           
+                        <div class="card card-5">
+                            
+                            <div class="card-heading">
+                                <h2 class="title">Patient's Transaction</h2>
+                            </div>
+                                        
+                            <!-- ** forms required ** -->
+            
+                            <div class="card-body" style="padding-bottom: 0px; ">
+                                    <div class="card-body"  style="padding-bottom: 50px; "style="display:block;" id="box">
+                                        <div align="center">
+                                            <input type="text" name="uuid" id="search" placeholder="Enter the uuid" class="form-control" />
+                                            <button type="submit" id="submit"><i class="fa fa-search"></i></button>
+                                        </div>
+                                        <!-- <ul class="list-group" id="result"></ul> -->
+                                        <br />
+                                    </div>
+                            </div>         
+                                  
+                            <div class="container">
+                                <div class="table-responsive" style="padding-bottom: 40px;">
+                                      <table class="table table-striped" id="table" >
+                                        <!-- <tr>
+                                          <th>Index</th>
+                                          <th>Timestamp</th>
+                                          <th>Transactions</a></th>
+                                          <th>Proof</th>
+                                          <th>Previous Hash</th>
+                                          <th></th>
+                                        </tr>  -->
+                                      </table>
+                                      
+                                  </div>
+                                  </div>
+                                
+                            </div>
+                        </div>
+            </div>
+            
+        </div>
+    
+
+
+
+
+    <!-- <div class="page-wrapper bg-gra-03 p-t-45 p-b-50">
+        <div class="bg-video">
+            <video id="myvideo" class="bg-video__content" autoplay muted loop>
+                <source src="../static/img/video.mp4" type="video/mp4" >
+                <source src="../static/img/video.webm" type="video/webm" >
+                Your browser is not supported!
+            </video>
+        </div>
+        
+        </div>
+    </div> -->
+
+    <!-- Jquery JS-->
+    <script src="../static/vendor/jquery/jquery.min.js"></script>
+    <!-- Vendor JS-->
+    <script src="../static/vendor/select2/select2.min.js"></script>
+    <script src="../static/vendor/datepicker/moment.min.js"></script>
+    <script src="../static/vendor/datepicker/daterangepicker.js"></script>
+
+    <!-- Main JS-->
+    <script src="../static/js/global.js"></script>
+        <!-- Axios js -->
+        <!-- <script src="../static/js/axios.min.js"></script> -->
+        <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+
+
+    
+
+
+<script>
+//   for(var i=2 ; i>0 ; i++){
+      
+//     var file1 = new ActiveXObject("Scripting.FileSystemObject");
+//     if(file1.FileExists("../static/block_explorer"+i+".json")){
+//         $(document).ready(function(){
+//         $.getJSON("../static/block_explorer/"+i+".json", function(data){
+//             var employee_data = '';
+//             var trans = 'Transaction Info'
+            
+//             $.each(data, function(key, value){
+//             employee_data += '<tr>';
+//             employee_data += '<td>'+value.index+'</td>';
+//             employee_data += '<td>'+value.timestamp+'</td>';
+//             employee_data += '<td> <a href="{{ url_for("blockexplorer_transac_details")}}">'+ trans +'</a> </td>';
+//             employee_data += '<td>'+value.proof+'</td>';
+//             employee_data += '<td>'+value.previous_hash+'</td>';
+//             employee_data += '<tr>';
+//             });
+//             $('table').append(employee_data);
+//         });
+        
+//         });
+//     }
+//     else {
+//         break;
+//     }
+//   }
+
+// ajax Implementation
+//   var i;
+//   while(i!=0){
+//     $.ajax({
+//     url:'../static/block_explorer/'+i+'.json',
+//     type:'HEAD',
+//     error: function()
+//     {
+//         break;
+//     },
+//     success: function()
+//     {
+//         $(document).ready(function(){
+//         $.getJSON("../static/block_explorer/"+i+".json", function(data){
+//             var employee_data = '';
+//             var trans = 'Transaction Info'
+            
+//             $.each(data, function(key, value){
+//             employee_data += '<tr>';
+//             employee_data += '<td>'+value.index+'</td>';
+//             employee_data += '<td>'+value.timestamp+'</td>';
+//             employee_data += '<td> <a href="{{ url_for("blockexplorer_transac_details")}}">'+ trans +'</a> </td>';
+//             employee_data += '<td>'+value.proof+'</td>';
+//             employee_data += '<td>'+value.previous_hash+'</td>';
+//             employee_data += '<tr>';
+//             });
+//             $('table').append(employee_data);
+//         });
+        
+//         });
+//     }
+// });
+//   }
+
+// axios
+
+
+// // Make a request for a user with a given ID
+
+// for(var i=2 ; i<6 ; i++){
+//     axios.get('../static/block_explorer/'+i+'.json')
+//     .then(function (response) {
+//         var employee_data = '';
+//             var trans = 'Transaction Info';
+            
+//             $.each(response, function(key, value){
+//             employee_data += '<tr>';
+//             employee_data += '<td>'+value.index+'</td>';
+//             employee_data += '<td>'+value.timestamp+'</td>';
+//             employee_data += '<td> <a href="{{ url_for("blockexplorer_transac_details")}}">'+ trans +'</a> </td>';
+//             employee_data += '<td>'+value.proof+'</td>';
+//             employee_data += '<td>'+value.previous_hash+'</td>';
+//             employee_data += '<tr>';
+//             });
+//             $('table').append(employee_data);
+//     })
+//     .catch(function (error) {
+//         // handle error
+//         break;
+//     })
+//     // .finally(function () {
+//     //     // always executed
+//     // });
+// }
+// for(var i=2 ; i!=0 ; i++){
+// // Open a log file
+// var myLog = new File("../static/block_explorer/"+i+".json");
+
+// // See if the file exists
+// if(myLog.exists()){
+//   write('The file exists');
+// }else{
+//   break;
+// }
+// }
+
+    // $(document).ready(function(){
+    // for(var i=2 ; i!=0 ; i++){
+    //     $.getJSON("../static/block_explorer/"+i+".json", function(data){
+    //         var employee_data = '';
+    //         var t = 'Transaction Info';
+    //         $.each(data, function(key, value){
+    //         employee_data += '<tr>';
+    //         employee_data += '<td>'+value.index+'</td>';
+    //         employee_data += '<td>'+value.timestamp+'</td>';
+    //         employee_data += '<td> <a href="{{ url_for("blockexplorer_transac_details")}}">'+ t +'</a> </td>';
+    //         employee_data += '<td>'+value.proof+'</td>';
+    //         employee_data += '<td>'+value.previous_hash+'</td>';
+    //         employee_data += '<tr>';
+    //         });
+    //         $('table').append(employee_data);
+    //     });
+    // }
+    // });
+
+ 
+    $(document).ready(function() {
+        document.getElementById('submit').addEventListener('click',function() {
+            var searchValue = document.getElementById('search').value;
+       
+            function doesFileExist(urlToFile) {
+                var xhr = new XMLHttpRequest();
+                xhr.open('HEAD', urlToFile, false);
+                xhr.send();
+
+                if (xhr.status == "404") {
+                    return false;
+                } else {
+                    return true;
+                }
+            }
+
+
+        
+        for(var i=10 ; i>=0 ; i--){
+            var result = doesFileExist("../static/block_explorer/"+searchValue+"_transactions.json");
+            if (result === true) {
+                    $.ajax({
+                        url:"../static/block_explorer/"+searchValue+"_transactions.json",
+                        dataType: "json",
+                        success:function(data){
+                            $(data).each(function(index,value){
+                                var record='<tr style="background-color: #f2f2f2"><th>IPFS File Hash</th> <td>'+value.ipfs_file_hash+'</td></tr>  <tr style="background-color: white"><th>Version Holder</th><td>'+value.version_holder+'</td></tr> <tr style="background-color: #f2f2f2"><th>Doctor Digital Sign</th><td>'+value.digital_sign_doctor+'</td></tr> <tr style="background-color: white"><th>Patient Digital Sign</th><td>'+value.digital_sign_patient+'</td></tr>              <tr style="background-color: #f2f2f2"><th>Doctor Public Key</th><td>'+value.public_key_doctor+'</td></tr> <tr style="background-color: white"><th>Patient Public Key</th><td>'+value.public_key_patient+'</td></tr><tr style="background-color: #f2f2f2" ><th>Time</th><td>'+value.time+'</td></tr><tr style="background-color: white"><th>Modification</th><td>'+value.modification+'</td></tr><tr style="background-color: #f2f2f2"><th>UUID</th><td>'+value.UUID+'</td></tr>';
+                                $('table').append(record);
+                            });
+                        }
+                    });
+                    break;
+            } else {
+                continue;
+            }
+        }
+    });
+});
+
+</script>
+
+</body>
+
+</html>
+<!-- end document-->
